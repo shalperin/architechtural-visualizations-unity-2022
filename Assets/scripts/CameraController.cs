@@ -7,14 +7,9 @@ using UnityEngine.UIElements;
 public class CameraController : MonoBehaviour
 {
     Vector2 rotation = Vector2.zero;
-   public float speed = 300;
+    public float speed = 450;  // WebGL Target 450
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+   
     // Update is called once per frame
     void LateUpdate()
     {
