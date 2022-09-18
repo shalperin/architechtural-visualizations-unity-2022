@@ -8,7 +8,8 @@ public class CameraController : MonoBehaviour
 {
     Vector2 rotation = Vector2.zero;
     public float speed = 450;  // WebGL Target 450
-    
+    private int MIN_LOOK_DOWN = -35;
+    private int MAX_LOOK_UP = 75;
    
     // Update is called once per frame
     void LateUpdate()
@@ -17,7 +18,7 @@ public class CameraController : MonoBehaviour
         {
             rotation.y += Input.GetAxis("Mouse X") * speed * Time.deltaTime;
             rotation.x += -Input.GetAxis("Mouse Y") * speed * Time.deltaTime;
-            rotation.x = Math.Clamp(rotation.x, -75, 75);
+            rotation.x = Math.Clamp(rotation.x, MIN_LOOK_DOWN, MAX_LOOK_UP);
             
             // Sam, you are cheating..  WTF does this do?
             transform.eulerAngles = (Vector2)rotation;
