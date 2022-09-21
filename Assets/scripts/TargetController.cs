@@ -33,4 +33,9 @@ public class TargetController : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
     }
+
+    private void Update()
+    {
+        transform.RotateAround(transform.position, Vector3.up, Time.deltaTime * 50f);
+    }
 }
