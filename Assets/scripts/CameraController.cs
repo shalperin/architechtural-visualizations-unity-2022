@@ -7,9 +7,24 @@ using UnityEngine.UIElements;
 public class CameraController : MonoBehaviour
 {
     Vector2 rotation = Vector2.zero;
-    public float speed = 450;  // WebGL Target 450
+    private int WEBGL_SPEED = 140;
+    private int EDITOR_SPEED = 550;
+    public bool useEditorSpeed = true;
+    
+    private float speed = 0;  
     private int MIN_LOOK_DOWN = -35;
     private int MAX_LOOK_UP = 75;
+   
+    void Start()  {
+        if (useEditorSpeed)
+        {
+            speed = EDITOR_SPEED;
+        }
+        else
+        {
+            speed = WEBGL_SPEED;
+        }
+    }
    
     // Update is called once per frame
     void LateUpdate()
