@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class CameraController2 : MonoBehaviour
 {
     Vector2 rotation = Vector2.zero;
-    private float WEBGL_SPEED = .7f;
+    private float WEBGL_SPEED = 1f;
     private float EDITOR_SPEED = 8f;
     public bool useEditorSpeed = true;
     
