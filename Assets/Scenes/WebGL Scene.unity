@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13120614, g: 0.09611349, b: 0.06183596, a: 1}
+  m_IndirectSpecularColor: {r: 0.39761955, g: 0.34256902, b: 0.27582845, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -530,7 +530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 271841920}
   m_Layer: 0
-  m_Name: exterior
+  m_Name: Exterior Lighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2262,7 +2262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 368862334}
   m_Layer: 0
-  m_Name: bathroom vanity light parent
+  m_Name: Bathroom Vanity Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2281,7 +2281,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1224786494}
-  - {fileID: 401817899}
+  - {fileID: 1534577986}
   m_Father: {fileID: 1485104747}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2513,38 +2513,6 @@ Transform:
   - {fileID: 550365107}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &401817898
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 401817899}
-  m_Layer: 0
-  m_Name: bathroom vanity light parent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &401817899
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401817898}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5102258, y: -0.19079208, z: -0.056742072}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1534577986}
-  m_Father: {fileID: 368862334}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &426524586
 GameObject:
@@ -3043,7 +3011,7 @@ GameObject:
   - component: {fileID: 609223416}
   - component: {fileID: 609223420}
   m_Layer: 5
-  m_Name: UI Canvas
+  m_Name: Menu System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3128,7 +3096,7 @@ RectTransform:
   - {fileID: 55621224}
   - {fileID: 666410435}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3369,7 +3337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637103099}
   m_Layer: 0
-  m_Name: Bedroom Ceiling Light Parent
+  m_Name: Bedroom Ceiling Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3783,7 +3751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 783696180}
   m_Layer: 0
-  m_Name: supporting
+  m_Name: Practical Lighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3875,7 +3843,7 @@ GameObject:
   m_Component:
   - component: {fileID: 867547530}
   m_Layer: 0
-  m_Name: lights
+  m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3914,7 +3882,7 @@ GameObject:
   m_Component:
   - component: {fileID: 931131272}
   m_Layer: 0
-  m_Name: v2 targets
+  m_Name: Floor Navigation Targets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3943,7 +3911,7 @@ Transform:
   - {fileID: 963605418}
   - {fileID: 1200903108}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -3958,7 +3926,6 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194230}
   - component: {fileID: 963194231}
-  - component: {fileID: 963194232}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4078,19 +4045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEditorSpeed: 0
---- !u!114 &963194232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60b373fbd214c48b68991ad6f7b7bf2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useEditorSpeed: 0
 --- !u!4 &963605418 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 707366182483268534, guid: cbb4d9e3d2ea64f449201dbd01e5d343, type: 3}
@@ -4162,7 +4116,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &984790661
 GameObject:
@@ -4174,7 +4128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 984790662}
   m_Layer: 0
-  m_Name: archmodel
+  m_Name: Architectural Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4198,8 +4152,9 @@ Transform:
   - {fileID: 1729143413}
   - {fileID: 640591578}
   - {fileID: 271426080}
+  - {fileID: 2019332358}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1051401916
 PrefabInstance:
@@ -4208,9 +4163,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1485104747}
     m_Modifications:
+    - target: {fileID: 2413496496004433603, guid: 78298ec66eddc2b4c8fb8204687f2594, type: 3}
+      propertyPath: m_Name
+      value: Dummy Lamp
+      objectReference: {fileID: 0}
     - target: {fileID: 2413496496544198100, guid: 78298ec66eddc2b4c8fb8204687f2594, type: 3}
       propertyPath: m_Name
-      value: Dining Light Parent
+      value: Dining Light
       objectReference: {fileID: 0}
     - target: {fileID: 2413496496544198101, guid: 78298ec66eddc2b4c8fb8204687f2594, type: 3}
       propertyPath: m_RootOrder
@@ -4256,40 +4215,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2413496496756841509, guid: 78298ec66eddc2b4c8fb8204687f2594, type: 3}
+      propertyPath: m_Name
+      value: Spot Light
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78298ec66eddc2b4c8fb8204687f2594, type: 3}
---- !u!1 &1077293042
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1077293043}
-  m_Layer: 0
-  m_Name: Custom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1077293043
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077293042}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.4073663, y: 0.14974788, z: 3.3323407}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2019332358}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1078197301
 GameObject:
   m_ObjectHideFlags: 0
@@ -5267,7 +5198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485104747}
   m_Layer: 0
-  m_Name: practical
+  m_Name: Motivated Lighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5363,13 +5294,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534577985}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.133, z: 0.006}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5102258, y: -0.32379198, z: -0.05074203}
   m_LocalScale: {x: 0.2047, y: -0.10105169, z: 0.47541907}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 401817899}
-  m_RootOrder: 0
+  m_Father: {fileID: 368862334}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1534577987
 BoxCollider:
@@ -5878,12 +5809,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019332354}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.51022625, y: 2.1202521, z: 2.1476593}
+  m_LocalPosition: {x: 4.9175925, y: 2.27, z: 5.48}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1077293043}
-  m_RootOrder: 0
+  m_Father: {fileID: 984790662}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &2069650570
 GameObject:
