@@ -24,7 +24,7 @@ public class UIController : MonoBehaviour
     private void Start()
     {
         ShowX();
-        HideFloorplan();
+        HideFloorplan(true);
         ShowInstructions();
     }
 
@@ -95,10 +95,16 @@ public class UIController : MonoBehaviour
         instructions.CrossFadeAlpha(VISIBLE, CROSSFADE_TIME, false);
     }
 
-    private void HideFloorplan()
+    private void HideFloorplan(bool fast = false)
     {
+        if (fast)
+        {
+            floorplan.GetComponent<CanvasRenderer>().SetAlpha(INVISIBLE);
+        } else
+        {
+            floorplan.CrossFadeAlpha(INVISIBLE, CROSSFADE_TIME, false);    
+        }
         floorplanVisible = false;
-        floorplan.CrossFadeAlpha(INVISIBLE, CROSSFADE_TIME, false);
     }
 
     private void HideInstructions()
