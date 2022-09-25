@@ -14,6 +14,7 @@ public class UIController : MonoBehaviour
     private const float VISIBLE = 1f;
     private const float INVISIBLE = 0f;
 
+    public GameObject s_witch;
     public Image x;
     public Image instructions;
     public Image floorplan;
@@ -23,6 +24,7 @@ public class UIController : MonoBehaviour
     
     private void Start()
     {
+        s_witch.SetActive(true);
         ShowX();
         HideFloorplan(true);
         ShowInstructions();

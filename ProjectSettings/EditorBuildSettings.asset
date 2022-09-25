@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/WebGL Scene.unity
+  - enabled: 0
+    path: Assets/Scenes/Evesham WebGL.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: Assets/Scenes/Meta Scene.unity
     guid: 5899c179ff560af47804843daff116ac
+  - enabled: 1
+    path: Assets/Scenes/220 Locust WebGL.unity
+    guid: 267a64a0228b9b04f8d7d420eaad58ad
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: bc343e3d46bad8d47b00e484442b7dc0, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: abbb8c3c010e0364885646804a3afb07, type: 2}

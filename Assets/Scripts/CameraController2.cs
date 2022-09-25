@@ -15,7 +15,9 @@ public class CameraController2 : MonoBehaviour
     private int MIN_LOOK_DOWN = -35;
     private int MAX_LOOK_UP = 75;
    
-    void Start()  {
+    void Start()
+    {
+        rotation = transform.eulerAngles;
         if (useEditorSpeed)
         {
             speed = EDITOR_SPEED;
