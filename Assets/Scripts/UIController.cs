@@ -21,6 +21,8 @@ public class UIController : MonoBehaviour
     
     private bool floorplanVisible = false;
     private bool instructionsVisible = false;
+
+    public bool isInMenuSystem = false;
     
     private void Start()
     {
@@ -79,10 +81,12 @@ public class UIController : MonoBehaviour
     private void HideX()
     {
         x.GetComponent<CanvasRenderer>().SetAlpha(INVISIBLE);
+        isInMenuSystem = false;
     }
     private void ShowX()
     {
         x.GetComponent<CanvasRenderer>().SetAlpha(VISIBLE);
+        isInMenuSystem = true;
     }
 
     private void ShowFloorpan()

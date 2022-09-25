@@ -1715,6 +1715,7 @@ MonoBehaviour:
   x: {fileID: 666410437}
   instructions: {fileID: 2073534299}
   floorplan: {fileID: 55621222}
+  isInMenuSystem: 0
 --- !u!1001 &612701113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2733,6 +2734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useEditorSpeed: 0
+  uiController: {fileID: 609223420}
 --- !u!4 &963605418 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 707366182483268534, guid: cbb4d9e3d2ea64f449201dbd01e5d343, type: 3}

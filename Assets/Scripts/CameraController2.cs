@@ -10,6 +10,8 @@ public class CameraController2 : MonoBehaviour
     private float WEBGL_SPEED = 1f;
     private float EDITOR_SPEED = 8f;
     public bool useEditorSpeed = true;
+    public UIController uiController;
+    
     
     private float speed = 0;  
     private int MIN_LOOK_DOWN = -35;
@@ -31,7 +33,7 @@ public class CameraController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) &!uiController.isInMenuSystem)
         {
             rotation.y += Input.GetAxis("Mouse X") * speed;
             rotation.x += -Input.GetAxis("Mouse Y") * speed;
