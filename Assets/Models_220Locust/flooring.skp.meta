@@ -47,7 +47,7 @@ SketchUpImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -104,7 +104,7 @@ SketchUpImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-  generateBackFace: 1
+  generateBackFace: 0
   mergeCoplanarFaces: 0
   selectedNodes: 00000000010000002a1100002b1100002c1100002d1100002e1100002f11000030110000
   assetHash:
